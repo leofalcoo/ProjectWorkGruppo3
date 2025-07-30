@@ -1,3 +1,5 @@
+Presentazione: https://docs.google.com/presentation/d/1v7aW6f75cQbkj9Sf2FifS2X-dUpeWAo3/edit?usp=sharing&ouid=107269115441606231055&rtpof=true&sd=true
+
 # 🚀 Tenuta Manarese E-commerce
 
 Un e-commerce completo per l'azienda vinicola Tenuta Manarese, realizzato con PHP, MySQL e Bootstrap 5.
