@@ -1,0 +1,28 @@
+# Redirect automatici dai file HTML ai PHP
+RewriteEngine On
+
+# Imposta index.php come pagina predefinita
+DirectoryIndex index.php
+
+# Redirect permanenti dai file HTML ai PHP
+RewriteRule ^index\.html$ index.php [R=301,L]
+RewriteRule ^prodotti\.html$ prodotti.php [R=301,L]
+RewriteRule ^contattaci\.html$ contattaci.php [R=301,L]
+RewriteRule ^login\.html$ login.php [R=301,L]
+
+# Regole per permettere l'accesso ai file PHP senza estensione (opzionale)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+# Sicurezza: impedisci accesso diretto ai file di configurazione
+<Files "*.inc">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Sicurezza: nascondi i file .htaccess
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>

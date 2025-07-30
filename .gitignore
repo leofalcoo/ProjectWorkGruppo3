@@ -1,0 +1,83 @@
+# ===========================================
+# GITIGNORE - Tenuta Manarese E-commerce
+# ===========================================
+
+# File di configurazione con credenziali
+config.php
+config_email.php
+config_problematic.php
+
+# File di configurazione database
+*.env
+.env.local
+.env.production
+
+# File temporanei e cache
+*.tmp
+*.temp
+*.cache
+temp/
+cache/
+
+# File di log
+*.log
+logs/
+error.log
+access.log
+
+# File di backup
+*.bak
+*.backup
+*_backup*
+backup/
+
+# File di debug e test
+*debug*
+*test*
+debug/
+test/
+
+# File IDE e editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Immagini temporanee/upload
+uploads/temp/
+tmp/
+
+# Sessioni PHP
+sessions/
+tmp/sess_*
+
+# Composer (se utilizzato)
+vendor/
+composer.lock
+
+# NPM/Node (se utilizzato)
+node_modules/
+package-lock.json
+
+# File specifici del progetto che contengono dati sensibili
+database_*.sql
+*.sql
+sql/
+
+# File di configurazione specifica
+altervista_config.php
+local_config.php
+
+# Cache e file temporanei
+.htaccess.backup
+sitemap.xml.backup
